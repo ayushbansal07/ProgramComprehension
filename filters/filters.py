@@ -139,7 +139,7 @@ class Filters :
 		ln = len(timelist)
 		return timelist[int(ln/2)]
 
-	def extract_segments(self,data,first_der,range_min,range_max,timelimit=15000):
+	def extract_segments(self,data,first_der,range_min,range_max,timelimit=15000,to_continue=False):
 		thresh_data = self.apply_range_thresh(first_der,range_min,range_max,False)
 		segs = []
 		ln = len(thresh_data)
@@ -151,6 +151,8 @@ class Filters :
 		while i < ln:
 			if thresh_data[i][1] - lastTime < timelimit:
 				temp.append(thresh_data[i][1])
+				if to_continue:
+					lastTime = thresh_data[i][1]
 			else:
 				segs.append(self._get_median_time(temp))
 				temp = [thresh_data[i][1]]
@@ -165,7 +167,8 @@ class Filters :
 		i = 0
 		j = 0
 		ln_seg = len(segments)
-		while j < ln_seg:
+		data_len = len(data)
+		while j < ln_seg and i < data_len:
 			if data[i,1] == segments[j]:
 				segs.append(data[last_i:i])
 				j += 1
