@@ -10,3 +10,9 @@
 .ipynb_checkpoints/
 __pycache__/
 TODO
+code5.c
+filters/fixationpoints/
+filters/newdata
+filters/list_of_all_students.txt
+*.mat
+*.rar
