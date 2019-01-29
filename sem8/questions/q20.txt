@@ -1,0 +1,19 @@
+
+1. For the given input:
+             12 87 6 34 2
+			 
+			  the actual output : 2 6 12 34 87
+			  The output generated : infinite loop
+			 
+2. Partition is a recursive function.
+				TRUE / FALSE     ans: true
+				
+3. The partition(), is used to seperate the low, mid 
+	and high values of a list. 
+	
+				TRUE / FALSE     ans: true
+				
+4. mergesort() uses mid element defined by the higher value of the 
+	given list.
+	
+				TRUE / FALSE     ans: false

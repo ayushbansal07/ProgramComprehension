@@ -1,0 +1,9 @@
+
+1. Find the output of 11101 is :
+
+						10011  : ans
+						
+2. "return ( 10 * binary_to_gray(n / 10))" will return the value 
+   if the last two bits are same.
+
+			TRUE / FALSE       TRUE : ans

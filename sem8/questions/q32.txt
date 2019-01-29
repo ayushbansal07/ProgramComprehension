@@ -1,0 +1,21 @@
+
+1. sizeof(list) / sizeof(int): used to calculate the size of the arrray.
+
+			True / False         ans: true
+			
+2. Variable which is used to perform swapping.
+
+			a) list
+			b) size
+			c) ctr
+			d) temp			:ans
+		
+3. For each statement below, identify the true statement(s):
+				
+				 To print the list of the array, using the displayList():
+				    a) The base address and size of the array
+							is passed as parameter
+					b) *(a + ctr) identifies the next element
+					c) Swapping is performed
+					d) initializes the array
+					

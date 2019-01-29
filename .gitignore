@@ -16,3 +16,4 @@ filters/newdata
 filters/list_of_all_students.txt
 *.mat
 *.rar
+Spam*

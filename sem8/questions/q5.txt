@@ -1,0 +1,17 @@
+1. 6, 12, 28, 45 : Out of these numbers, for which one it
+						   will print "Entered Number is correct" ________________
+						   
+						   ANS: 6, 28
+						   
+						  
+2. 	Can we replace the condition (s==n) with (n/s)?
+							
+							Yes/ No 
+
+						  ANS: Yes
+
+3. Choose the concept(s) used here:
+						a) declaration with initialization	:ans
+						b) nested loops						:ans
+						c) function call
+						d) recursion

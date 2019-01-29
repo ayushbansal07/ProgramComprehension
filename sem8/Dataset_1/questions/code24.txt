@@ -1,0 +1,18 @@
+//C program to convert Binary to Gray code using recursion
+#include<stdio.h>
+int binary_to_gray(int n)
+{ 
+    if (!n) 
+        return 0; 
+    int a = n % 10;      
+    int b = (n / 10) % 10;          
+     if ((a && !b) && (!a && b))         //error   ||        
+            return (1 + 10 * binary_to_gray(n / 10));         
+   return (10 * binary_to_gray(n / 10));
+} 
+// Driver Function
+void main()
+{
+    int binary_number = 11101;     
+    printf("%d", binary_to_gray(binary_number));
+}
