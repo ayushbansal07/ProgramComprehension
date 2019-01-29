@@ -9,20 +9,22 @@ class Filters :
 		self.MORPHOLOGICAL_FILTER = np.array([0,0,5,0,0])
 		self.BASE_DIR = base_dir
 
-	def readfile(self,filename):
+	def readfile(self,filename,isCSV = False):
+		if isCSV:
+			return pd.read_csv(self.BASE_DIR + filename)
 		return pd.read_excel(self.BASE_DIR + filename)
 
-	def filter_data(self,data):
+	def filter_data(self,data,timeStamp_col = -1):
 		filtered_data = np.array(data)
 		fil_data = []
 		for x in filtered_data:
 			if x[1] != 0:
-				fil_data.append((x[1],x[-1]))
+				fil_data.append((x[1],x[timeStamp_col]))
 		filtered_data = np.array(fil_data)
 		return filtered_data
 
-	def read_and_preprocess_data(self,filename):
-		return self.filter_data(self.readfile(filename))
+	def read_and_preprocess_data(self,filename,timeStamp_col = -1):
+		return self.filter_data(self.readfile(filename,True),timeStamp_col)
 
 	def plot_data(self,data,saveplace=None,isDerivative = False):
 		plt.figure(figsize=(20,12))

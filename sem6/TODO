@@ -1,0 +1,15 @@
+March 23 2018 - 
+Find patterns (line no wise)
+
+Find gaze time for each line - IMP
+Eg.
+10
+11
+12
+10
+different for bot the 10s
+
+Extract row wise data
+
+Each loop individual anylysis, +- loop length
+

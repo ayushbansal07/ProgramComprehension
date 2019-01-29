@@ -1,3 +1,12 @@
 *.png
 *.pdf
 *.xlsx
+*.pdf
+*.zip
+*.xml
+*.csv
+*.png
+*.pptx
+.ipynb_checkpoints/
+__pycache__/
+TODO
