@@ -1,0 +1,17 @@
+CREATE root 0
+CREATE statement 2 1 2
+CREATE func-binary_to_gray 0
+CREATE func-main 0
+CREATE if 2 5 6
+CREATE statement 2 7 8
+CREATE if 2 9 10
+CREATE statement 2 11 12
+CREATE statement 5 14 15 16 17 18
+INSERT 0 1
+INSERT 0 2
+INSERT 0 3
+INSERT 2 4
+INSERT 2 5
+INSERT 2 6
+INSERT 2 7
+INSERT 3 8

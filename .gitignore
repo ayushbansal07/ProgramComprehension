@@ -17,3 +17,6 @@ filters/list_of_all_students.txt
 *.mat
 *.rar
 Spam*
+*.pkl
+Ayush_code details/
+report/
